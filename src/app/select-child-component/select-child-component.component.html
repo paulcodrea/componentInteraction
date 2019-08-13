@@ -1,0 +1,7 @@
+<ul *ngFor = "let fruit of fruitList; let idx = index">
+    
+    <li (click) = "emitSelection(item, idx)" [ngStyle]="{'background-color': idx === selectedIndex ? 'aqua' : 'transparent'}">{{fruit}}</li>
+
+</ul>
+
+<!-- <li *ngFor="let item of fruitList; let idx = index" (click)="emitSelection(item, idx)" [ngStyle]="{'background-color': idx === selectedIndex ? 'aqua' : 'transparent'}" >{{item.title}}</li> -->
